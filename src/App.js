@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import HooksTest from "./components/HooksTest";
+import Button from "antd/lib/button";
+import HocTest from "./components/HocTest";
+import FormTest from "./components/FormTest";
+import KFormTest from "./components/KFormTest";
+import Dialog from "./components/Dialog";
+import Tree from "./components/Tree";
+import ReduxTest from "./components/ReduxTest";
+import ReactRedux from "./components/ReactRedux";
+import MyReduxTest from "./components/MyReduxTest";
+import RouterTest from "./components/RouterTest";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <HooksTest/> */}
+      {/* <HocTest/> */}
+      {/* <FormTest/> */}
+      {/* <KFormTest/> */}
+      {/* <Dialog>something</Dialog> */}
+      {/* <div className="App"> <Button type="primary">Button</Button> </div> */}
+      {/* <Tree/> */}
+      {/* <ReduxTest/> */}
+      {/* <ReactRedux/> */}
+      {/* <MyReduxTest/> */}
+      <RouterTest />
     </div>
   );
 }
