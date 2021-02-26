@@ -38,9 +38,12 @@ function thunk({ dispatch, getState }) {
 
 export default class MyReduxTest extends Component {
   componentDidMount() {
-    store.subscribe(() => {
+    this.unSubscribe= store.subscribe(() => {
       this.forceUpdate();
     });
+  }
+  componentWillUnmount(){
+    this.unSubscribe()
   }
   render() {
     return (

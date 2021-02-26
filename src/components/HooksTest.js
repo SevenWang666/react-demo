@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer, useContext } from "react";
+import React, { useState, useEffect, useReducer, useContext,useCallback } from "react";
 import hooks from "./hooks.module.css";
 
 const Context = React.createContext();
@@ -64,6 +64,15 @@ export default function HooksTest() {
   useEffect(() => {
     document.title = fruit;
   }, [fruit]);
+  function doSomething(){
+    console.log('测试callback')
+  }
+  const memoizedCallback = useCallback(
+  () => {
+    doSomething();
+  },
+  [],
+);
   return (
     <Context.Provider value={{fruits,dispatch}}>
       <div>

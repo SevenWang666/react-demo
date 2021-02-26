@@ -16,7 +16,11 @@ export function createStore(reducer, enhancer) {
   dispatch({ type: "123" }); //初始化时调用
   function subscribe(cb) {
     callbackList.push(cb);
+    return ()=>{
+      callbackList.splice(callbackList.indexOf(cb),1)
+    }
   }
+ 
 
   return { getStore, dispatch, subscribe };
 }

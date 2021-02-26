@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "antd": "3.20.7",
+    "mobx": "^6.0.1",
+    "mobx-react": "^7.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.2.0",

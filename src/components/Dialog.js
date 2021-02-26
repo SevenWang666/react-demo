@@ -14,7 +14,7 @@ export default class Dialog extends Component {
     render() {
         return (
             <div>
-                {createPortal(<div>{this.props.children}</div>,this .node)}
+                {createPortal(<div>{this.props.children}</div>,this.node)}
             </div>
         )
     }
