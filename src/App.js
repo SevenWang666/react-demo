@@ -13,6 +13,8 @@ import ReactRedux from "./components/ReactRedux";
 import MyReduxTest from "./components/MyReduxTest";
 import RouterTest from "./components/RouterTest";
 import UseMemo from "./components/UseMemo";
+import childComponentMethod from "./components/childComponentMethod";
+import InitScroll from "./components/InitScroll";
 
 import selectedModel from "./mobx/index.js";
 
@@ -50,6 +52,12 @@ const routeConfig = [
       { path: "KFormTest", component: KFormTest },
       // { path: "Tree", component: Tree },
       { path: "UseMemo", component: UseMemo },
+      {
+        path: "childComponentparameters",component: childComponentMethod
+      },
+      {
+        path: "InitScroll",component: InitScroll
+      }
     ],
   },
 ];
